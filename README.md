@@ -55,7 +55,7 @@ huangshan/
 
 ---
 
-### 2. analyze_vehicle_schedule.py (车辆时刻表分析)
+### 2. vehicle_schedule_analysis.py (车辆时刻表分析)
 
 **功能**: 分析车辆运行时刻表，统计发车间隔、运营时长等指标
 
@@ -160,7 +160,7 @@ huangshan/
 │  - 将上下客统计合并到高德站点文件                                │
 └─────────────────────────────────────────────────────────────────┘
 
-步骤⑨: analyze_vehicle_schedule.py - 分析车辆运行时刻表
+步骤⑨: vehicle_schedule_analysis.py - 分析车辆运行时刻表
 ┌─────────────────────────────────────────────────────────────────┐
 │  输入: MID_output/huangshan.csv                                  │
 │        INIT_IC_data/*.csv                                        │
@@ -212,7 +212,7 @@ OUT_visualization/bus_routes_reconstructed.html
 
 MID_output/huangshan.csv + INIT_IC_data/*.csv
     ↓
-analyze_vehicle_schedule
+vehicle_schedule_analysis
     ↓
 ├── OUT_analysis/vehicle_statistics_summary.csv
 ├── OUT_analysis/vehicle_statistics_by_vehicle.csv
@@ -294,6 +294,6 @@ analyze_vehicle_schedule
 6. 运行 `merge_stations.py` - 合并同名站点并添加IC卡统计
 7. 运行 `filter_stations_by_boundary.py` - 按边界筛选站点
 8. 运行 `merge_boarding_count_to_gaode.py` - 合并上下客统计到高德站点
-9. 运行 `analyze_vehicle_schedule.py` - 分析车辆运行时刻表
+9. 运行 `vehicle_schedule_analysis.py` - 分析车辆运行时刻表
 
 结果文件将保存在对应的 `OUT_*` 目录中。

@@ -31,7 +31,7 @@ from plotly.subplots import make_subplots
 # ==================== 配置 ====================
 REPO_ROOT = Path(__file__).resolve().parent
 IC_DATA_DIR = REPO_ROOT / "INIT_IC_data"
-OUTPUT_DIR = REPO_ROOT / "OUT_user_analysis"
+OUTPUT_DIR = REPO_ROOT / "OUT_user_analysis_card"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # 可追踪用户的卡类型（有固定用户ID）
